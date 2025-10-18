@@ -1,9 +1,26 @@
-fastapi
-uvicorn
-sqlalchemy
-psycopg2-binary
-python-dotenv
-pydantic
-python-multipart
-pandas
-openpyxl
+# --- Core Framework ---
+fastapi==0.115.0
+uvicorn==0.31.0
+
+# --- Database & ORM ---
+SQLAlchemy==2.0.36
+psycopg2-binary==2.9.10
+alembic==1.13.3
+
+# --- Environment Variables ---
+python-dotenv==1.0.1
+
+# --- Authentication & Security (optional, future use) ---
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# --- Data Validation ---
+pydantic[email]==2.9.2
+
+# --- File Upload & Parsing ---
+python-multipart==0.0.9
+pandas==2.3.3
+openpyxl==3.1.5  # for reading Excel (.xlsx)
+
+# --- HTTP Requests ---
+requests==2.32.3
